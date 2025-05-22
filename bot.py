@@ -1,7 +1,9 @@
 import os
-import os
-TOKEN = os.getenv("8159054683:AAHCHzV6X3P2q9XdCA2iuV0MCSdXX18nwZM")
-print("Полученный токен:", TOKEN)
+print("=== ВСЕ ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ ===")
+for key, value in os.environ.items():
+    print(f"{key} = {value}")
+print("===============================")
+
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
