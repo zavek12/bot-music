@@ -48,6 +48,7 @@ async def handle_mood(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 if __name__ == '__main__':
     TOKEN = os.getenv("8159054683:AAHCHzV6X3P2q9XdCA2iuV0MCSdXX18nwZM")
+    print("Полученный токен:", TOKEN)
 
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
