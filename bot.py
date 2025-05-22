@@ -1,7 +1,5 @@
 import os
-TOKEN = os.getenv("8159054683:AAHCHzV6X3P2q9XdCA2iuV0MCSdXX18nwZM")
-print(f"Полученный токен: [{TOKEN}]")
-print(f"Длина токена: {len(TOKEN) if TOKEN else 'None'}")
+TOKEN = "8159054683:AAHCHzV6X3P2q9XdCA2iuV0MCSdXX18nwZM"
 
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
