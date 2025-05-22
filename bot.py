@@ -1,8 +1,6 @@
 import os
-print("=== ВСЕ ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ ===")
-for key, value in os.environ.items():
-    print(f"{key} = {value}")
-print("===============================")
+print(f"Полученный токен: [{TOKEN}]")
+print(f"Длина токена: {len(TOKEN) if TOKEN else 'None'}")
 
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
