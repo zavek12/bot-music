@@ -1,5 +1,4 @@
 import os
-TOKEN = "8159054683:AAHCHzV6X3P2q9XdCA2iuV0MCSdXX18nwZM"
 
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
@@ -49,8 +48,7 @@ async def handle_mood(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Чем хочешь заняться?", reply_markup=reply_markup)
 
 if __name__ == '__main__':
-    TOKEN = os.getenv("8159054683:AAHCHzV6X3P2q9XdCA2iuV0MCSdXX18nwZM")
-    print("Полученный токен:", TOKEN)
+    TOKEN = os.getenv("7928508435:AAEGrwCsDK8iFSwKBdCoqutyWlo4t3hJb9c")
 
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
